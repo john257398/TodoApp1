@@ -1,0 +1,379 @@
+@media screen and (max-width:360px) and (min-width:321px) {
+    .start{
+        font-size: 200%;
+ 
+    }
+    .fill{
+        font-size: 130%;
+        width: 70%;
+    }
+    .email{
+        width: 70%;
+        font-size: 130%;
+    }
+    .username2{
+        width: 70%;
+        font-size: 130%;
+    }
+    .password2{
+        width: 70%;
+        font-size: 130%;
+    }
+    .confirm{
+        width: 70%;
+        font-size: 130%;
+    }
+    .signUp{
+     width: 70%;
+     font-size: 130%;
+    }
+    .haveAccount{
+     font-size: 130%;
+ }
+ }
+ @media screen and (max-width:411px) and (min-width:376px){
+     .start{
+         font-size: 200%;
+  
+     }
+     .fill{
+         font-size: 130%;
+         width: 70%;
+     }
+     .email{
+         width: 70%;
+         font-size: 130%;
+     }
+     .username2{
+         width: 70%;
+         font-size: 130%;
+     }
+     .password2{
+         width: 70%;
+         font-size: 130%;
+     }
+     .confirm{
+         width: 70%;
+         font-size: 130%;
+     }
+     .signUp{
+      width: 70%;
+      font-size: 130%;
+     }
+     .haveAccount{
+         font-size: 130%;
+     }
+     .haveAccount{
+         font-size: 120%;
+         margin: auto;
+         cursor: pointer;
+     }
+ }
+ @media screen and (max-width:320px) and (min-width:281px) {
+     .start{
+         font-size: 180%;
+  
+     }
+     .fill{
+         font-size: 120%;
+         width: 70%;
+     }
+     .email{
+         width: 70%;
+         font-size: 120%;
+     }
+     .username2{
+         width: 70%;
+         font-size: 120%;
+     }
+     .password2{
+         width: 70%;
+         font-size: 120%;
+     }
+     .confirm{
+         width: 70%;
+         font-size: 120%;
+     }
+     .signUp{
+      width: 70%;
+      font-size: 120%;
+     }
+     .haveAccount{
+         font-size: 120%;
+     }
+ }
+ @media screen and (max-width:375px) and (min-width:361px) {
+     .start{
+         font-size: 180%;
+  
+     }
+     .fill{
+         font-size: 100%;
+         width: 70%;
+     }
+     .inputBody3{
+         width: 78%;
+         padding-left: 4%;
+     }
+     .regIcon3{
+         font-size: 18px;
+         height: 70%;
+     }
+     .email{
+         height: 7vh;
+         font-size: 100%;
+     }
+     .inputBody4{
+         width: 78%;
+         padding-left: 4%;
+         margin-top: 4%;
+     }
+     .regIcon4{
+         font-size: 18px;
+         height: 70%;
+     }
+     .username2{
+         height: 7vh;
+         font-size: 100%;
+     }
+     .inputBody5{
+         width: 78%;
+         padding-left: 4%;
+         margin-top: 4%;
+     }
+     .regIcon5{
+         font-size: 18px;
+         height: 70%;
+     }
+     .password2{
+         height: 7vh;
+         font-size: 100%;
+     }
+     .inputBody6{
+         width: 78%;
+         padding-left: 4%;
+         margin-top: 4%;
+     }
+     .regIcon6{
+         font-size: 18px;
+         height: 70%;
+     }
+     .confirm{
+         height: 7vh;
+         font-size: 100%;
+     }
+     .buttonParent2{
+         width: 78%;
+         margin-top: 4%;
+     }
+     .signUp{
+      height: 7vh;
+      font-size: 100%;
+     }
+     .haveAccount{
+         font-size: 90%;
+     }
+ }
+ @media screen and (max-width:414px) and (min-width:412px) {
+     .start{
+         font-size: 180%;
+  
+     }
+     .fill{
+         font-size: 100%;
+         width: 70%;
+     }
+     .inputBody3{
+         width: 78%;
+         padding-left: 4%;
+     }
+     .regIcon3{
+         font-size: 18px;
+         height: 70%;
+     }
+     .email{
+         height: 7vh;
+         font-size: 100%;
+     }
+     .inputBody4{
+         width: 78%;
+         padding-left: 4%;
+         margin-top: 4%;
+     }
+     .regIcon4{
+         font-size: 18px;
+         height: 70%;
+     }
+     .username2{
+         height: 7vh;
+         font-size: 100%;
+     }
+     .inputBody5{
+         width: 78%;
+         padding-left: 4%;
+         margin-top: 4%;
+     }
+     .regIcon5{
+         font-size: 18px;
+         height: 70%;
+     }
+     .password2{
+         height: 7vh;
+         font-size: 100%;
+     }
+     .inputBody6{
+         width: 78%;
+         padding-left: 4%;
+         margin-top: 4%;
+     }
+     .regIcon6{
+         font-size: 18px;
+         height: 70%;
+     }
+     .confirm{
+         height: 7vh;
+         font-size: 100%;
+     }
+     .buttonParent2{
+         width: 78%;
+         margin-top: 4%;
+     }
+     .signUp{
+      height: 7vh;
+      font-size: 100%;
+     }
+     .haveAccount{
+         font-size: 90%;
+     }
+ }
+ @media screen and (max-width:768px) and (min-width:521px) {
+     .start{
+         font-size: 270%;
+  
+     }
+     .fill{
+         font-size: 170%;
+         width: 70%;
+     }
+     .email{
+         width: 70%;
+         font-size: 170%;
+     }
+     .username2{
+         width: 70%;
+         font-size: 170%;
+     }
+     .password2{
+         width: 70%;
+         font-size: 170%;
+     }
+     .confirm{
+         width: 70%;
+         font-size: 170%;
+     }
+     .signUp{
+      width: 70%;
+      font-size: 170%;
+     }
+     .haveAccount{
+         font-size: 170%;
+     }
+ }
+ @media screen and (max-width:1024px) and (min-width:769px) {
+     .start{
+         font-size: 320%;
+  
+     }
+     .fill{
+         font-size: 220%;
+         width: 70%;
+     }
+     .email{
+         width: 70%;
+         font-size: 220%;
+     }
+     .username2{
+         width: 70%;
+         font-size: 220%;
+     }
+     .password2{
+         width: 70%;
+         font-size: 220%;
+     }
+     .confirm{
+         width: 70%;
+         font-size: 220%;
+     }
+     .signUp{
+      width: 70%;
+      font-size: 220%;
+     }
+     .haveAccount{
+         font-size: 220%;
+     }
+ }
+ @media screen and (max-width:540px) and (min-width:415px) {
+     .start{
+         font-size: 180%;
+     }
+     .fill{
+         font-size: 120%;
+         width: 70%;
+     }
+     .email{
+         width: 70%;
+         font-size: 130%;
+     }
+     .username2{
+         width: 70%;
+         font-size: 130%;
+     }
+     .password2{
+         width: 70%;
+         font-size: 130%;
+     }
+     .confirm{
+         width: 70%;
+         font-size: 130%;
+     }
+     .signUp{
+      width: 70%;
+      font-size: 130%;
+     }
+     .haveAccount{
+         font-size: 120%;
+     }   
+ }
+ @media screen and (max-width:280px) {
+     .start{
+         font-size: 170%;
+  
+     }
+     .fill{
+         font-size: 110%;
+         width: 70%;
+     }
+     .email{
+         width: 70%;
+         font-size: 120%;
+     }
+     .username2{
+         width: 70%;
+         font-size: 120%;
+     }
+     .password2{
+         width: 70%;
+         font-size: 120%;
+     }
+     .confirm{
+         width: 70%;
+         font-size: 120%;
+     }
+     .signUp{
+      width: 70%;
+      font-size: 120%;
+     }
+     .haveAccount{
+         font-size: 110%;
+     }
+ }

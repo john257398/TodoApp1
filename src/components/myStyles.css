@@ -1,0 +1,26 @@
+.primary{
+    color: orange;
+}
+
+.font-xl{
+    font-size: 72px;
+}
+table{
+    border: 1px solid black;
+    margin: auto;
+    background-color: orange;
+    width: 20%;
+    padding: 1%;
+    height: 30%;
+    border-radius: 5%;
+    margin-top: 15%;
+}
+.kill{
+width: 97%;
+font-size: xx-large;
+background-color: white;
+}
+.under{
+    width: 100%;
+    font-size: xx-large;
+}

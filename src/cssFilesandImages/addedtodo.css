@@ -1,0 +1,658 @@
+.editHead{
+    width: 100%;
+    height: 100vh;
+    box-Sizing: border-box;
+    background-color: rgb(218, 225, 244);
+}
+.newTodoContainer{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    left: 25%;
+    background-Image:
+    linear-gradient(rgb(168, 121, 227),rgba(169, 121, 227, 0.082))
+}
+.inputContainer{
+    height: 45%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.Topic{
+    text-align: center;
+    margin-top: 7%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.todoTopic{
+box-sizing: border-box;    
+height: 25%;
+width: 70%;
+border: none;
+outline: none;
+padding-left: 4%;
+font-size: x-large;
+background-color: rgb(240, 245, 241);
+border-radius: 30px;
+margin: auto;
+}
+.aboutTodo{
+    box-sizing: border-box;
+    height: 25%;
+    width: 70%;
+    border: none;
+    outline: none;
+    padding-left: 4%;
+    background-color: rgb(240, 245, 241);
+    border-radius: 30px;
+    margin: auto;
+    font-size: x-large;
+}
+.time{
+height: 130%;
+width: 30%;
+outline: none;
+border: none;
+font-size: large;
+background-color: rgb(240, 245, 241);
+}
+.timeLabel{
+    font-size: x-large;
+}
+.date{
+height: 130%;
+width: 30%;
+font-size: large;
+outline: none;
+border: none;
+background-color: rgb(240, 245, 241);
+}
+.dateLabel{
+    font-size: x-large;
+}
+.dateContainer{
+    color: white;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+.add{
+height: 10%;
+width: 70%;
+font-size: x-large;
+color: white;
+background-color: rgb(168, 121, 227);
+border-radius: 30px;
+margin-top: 9%;
+margin-left: 15%;
+}
+.iconBack{
+    font-size: xx-large;
+    position: absolute;
+    top: 9%;
+    left: 2%;
+}
+@media screen and (max-width:360px) and (min-width:321px) {
+    .newTodoContainer{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: absolute;
+        left: 0%;
+        background-Image:
+        linear-gradient(rgb(168, 121, 227),rgba(169, 121, 227, 0.068))
+        }
+        .iconBack{
+            display: none;
+        }
+        .Topic{
+            font-size: 170%;
+            margin-top: 20%;
+        }
+        .inputContainer{
+          height: 55%;
+        }
+        .dateContainer{
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 0%;
+        }
+        .todoTopic{
+            font-size: 130%;
+            height: 15%;
+        }
+        .aboutTodo{
+            font-size: 130%;
+            height: 15%;
+        }
+        .time{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+            
+        }
+        .date{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+        }
+        .timeLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .dateLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .add{
+            margin-top: 15%;
+            height: 8.5%;
+        }
+}
+@media screen and (max-width:411px) and (min-width:376px){
+    .newTodoContainer{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: absolute;
+        left: 0%;
+        background-Image:
+        linear-gradient(rgb(168, 121, 227),rgba(169, 121, 227, 0.068))
+        }
+        .iconBack{
+            display: none;
+        }
+        .Topic{
+            font-size: 170%;
+            margin-top: 20%;
+        }
+        .inputContainer{
+          height: 55%;
+        }
+        .dateContainer{
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 0%;
+        }
+        .todoTopic{
+            font-size: 130%;
+            height: 15%;
+        }
+        .aboutTodo{
+            font-size: 130%;
+            height: 15%;
+        }
+        .time{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+            
+        }
+        .date{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+        }
+        .timeLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .dateLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .add{
+            margin-top: 15%;
+            height: 8.5%;
+        }
+
+}
+@media screen and (max-width:320px) and (min-width:281px) {
+    .newTodoContainer{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: absolute;
+        left: 0%;
+        background-Image:
+        linear-gradient(rgb(168, 121, 227),rgba(169, 121, 227, 0.068))
+        }
+        .iconBack{
+            display: none;
+        }
+        .Topic{
+            font-size: 170%;
+            margin-top: 20%;
+        }
+        .inputContainer{
+          height: 55%;
+        }
+        .dateContainer{
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 0%;
+        }
+        .todoTopic{
+            font-size: 115%;
+            height: 15%;
+        }
+        .aboutTodo{
+            font-size: 115%;
+            height: 15%;
+        }
+        .time{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+            
+        }
+        .date{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+        }
+        .timeLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .dateLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .add{
+            margin-top: 15%;
+            height: 9%;
+            font-size: 130%;
+        }
+   
+}
+@media screen and (max-width:375px) and (min-width:361px) {
+    .newTodoContainer{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: absolute;
+        left: 0%;
+        background-Image:
+        linear-gradient(rgb(168, 121, 227),rgba(169, 121, 227, 0.068))
+        }
+        .iconBack{
+            display: none;
+        }
+        .Topic{
+            font-size: 170%;
+            margin-top: 20%;
+        }
+        .inputContainer{
+          height: 55%;
+        }
+        .dateContainer{
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 0%;
+        }
+        .todoTopic{
+            font-size: 115%;
+            height: 15%;
+        }
+        .aboutTodo{
+            font-size: 115%;
+            height: 15%;
+        }
+        .time{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+            
+        }
+        .date{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+        }
+        .timeLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .dateLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .add{
+            margin-top: 15%;
+            height: 8.5%;
+            font-size: 130%;
+        }
+}
+@media screen and (max-width:414px) and (min-width:412px) {
+    .newTodoContainer{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: absolute;
+        left: 0%;
+        background-Image:
+        linear-gradient(rgb(168, 121, 227),rgba(169, 121, 227, 0.068))
+        }
+        .iconBack{
+            display: none;
+        }
+        .Topic{
+            font-size: 170%;
+            margin-top: 20%;
+        }
+        .inputContainer{
+          height: 55%;
+        }
+        .dateContainer{
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 0%;
+        }
+        .todoTopic{
+            font-size: 115%;
+            height: 15%;
+        }
+        .aboutTodo{
+            font-size: 115%;
+            height: 15%;
+        }
+        .time{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+            
+        }
+        .date{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+        }
+        .timeLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .dateLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .add{
+            margin-top: 15%;
+            height: 8.5%;
+            font-size: 130%;
+        } 
+}
+@media screen and (max-width:768px) and (min-width:521px) {
+    .newTodoContainer{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: absolute;
+        left: 0%;
+        background-Image:
+        linear-gradient(rgb(168, 121, 227),rgba(169, 121, 227, 0.068))
+        }
+        .iconBack{
+            display: none;
+        }
+        .Topic{
+            font-size: 270%;
+            margin-top: 20%;
+        }
+        .inputContainer{
+          height: 40%;
+        }
+        .todoTopic{
+            width: 80%;
+            font-size: 200%;
+            height: 25%;
+        }
+        .aboutTodo{
+            width: 80%;
+            font-size: 200%;
+            height: 25%;
+        }
+        .time{
+            font-size:160%;
+        }
+        .date{
+            font-size:160%;
+        }
+        .timeLabel{
+            font-size: 200%;
+        }
+        .dateLabel{
+            font-size: 200%;
+        }
+        .dateContainer{
+            width: 80%;
+            margin-left: 10%;
+        }
+        .add{
+            width: 80%;
+            font-size: 220%;
+            margin-top: 15%;
+            margin-left: 10%;
+        } 
+}
+@media screen and (max-width:1024px) and (min-width:769px) {
+    .newTodoContainer{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: absolute;
+        left: 0%;
+        background-Image:
+        linear-gradient(rgb(168, 121, 227),rgba(169, 121, 227, 0.068))
+        }
+        .iconBack{
+            display: none;
+        }
+        .Topic{
+            font-size: 320%;
+            margin-top: 20%;
+        }
+        .inputContainer{
+          height: 40%;
+        }
+        .todoTopic{
+            width: 80%;
+            font-size: 250%;
+            height: 25%;
+        }
+        .aboutTodo{
+            width: 80%;
+            font-size: 250%;
+            height: 25%;
+        }
+        .time{
+            font-size:190%;
+        }
+        .date{
+            font-size:190%;
+        }
+        .timeLabel{
+            font-size: 250%;
+        }
+        .dateLabel{
+            font-size: 250%;
+        }
+        .dateContainer{
+            width: 80%;
+            margin-left: 10%;
+        }
+        .add{
+            width: 80%;
+            font-size: 260%;
+            margin-top: 15%;
+            margin-left: 10%;
+        } 
+}
+@media screen and (max-width:540px) and (min-width:415px) {
+    .newTodoContainer{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: absolute;
+        left: 0%;
+        background-Image:
+        linear-gradient(rgb(168, 121, 227),rgba(169, 121, 227, 0.068))
+        }
+        .iconBack{
+            display: none;
+        }
+        .Topic{
+            font-size: 200%;
+            margin-top: 15%;
+        }
+        .inputContainer{
+          height: 55%;
+        }
+        .dateContainer{
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 0%;
+        }
+        .todoTopic{
+            font-size: 130%;
+            height: 15%;
+        }
+        .aboutTodo{
+            font-size: 130%;
+            height: 15%;
+        }
+        .time{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;         
+        }
+        .date{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+        }
+        .timeLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .dateLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .add{
+            margin-top: 12%;
+            height: 8.5%;
+        }
+}
+@media screen and (max-width:280px) {
+    .newTodoContainer{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: absolute;
+        left: 0%;
+        background-Image:
+        linear-gradient(rgb(168, 121, 227),rgba(169, 121, 227, 0.068))
+        }
+        .iconBack{
+            display: none;
+        }
+        .Topic{
+            font-size: 150%;
+            margin-top: 20%;
+        }
+        .inputContainer{
+          height: 55%;
+        }
+        .dateContainer{
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 0%;
+        }
+        .todoTopic{
+            font-size: 115%;
+            height: 15%;
+        }
+        .aboutTodo{
+            font-size: 115%;
+            height: 15%;
+        }
+        .time{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+            
+        }
+        .date{
+            font-size: 130%;
+            width: 100%;
+            height: 26%;
+            border-radius: 30px;
+        }
+        .timeLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .dateLabel{
+            font-size: 130%;
+            margin: auto;
+        }
+        .add{
+            margin-top: 15%;
+            height: 9%;
+            font-size: 130%;
+        }
+}

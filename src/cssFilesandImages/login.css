@@ -1,0 +1,248 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    box-Sizing: border-box;
+}
+.background{
+    background-Image: url(IMG-20210404-WA0006.jpg);
+    background-Repeat: no-repeat;
+    background-Attachment: fixed;
+    background-Position: center;
+    background-Size:cover ;
+    box-Sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-Direction: column;
+    justify-Content: space-between;
+    height: 38vh;
+    margin-top: 3%;
+}
+.inputBody{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: rgb(240, 245, 241);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 36%;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding-left: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.regIcon{
+    border-right: 1px solid rgb(145, 138, 138);
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 22px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2%;
+    color: rgb(100, 100, 100);
+}
+.username{
+    outline: none;
+    margin: auto;
+    height: 9vh;
+    flex-grow: 2;
+    margin-left: 2%;
+    font-Size: 130%;
+    border: none;
+    border-Radius:30px ;
+    background: transparent;
+}
+.inputBody2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(240, 245, 241);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    width: 36%;
+    border-radius: 30px;
+    padding-left: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+.regIcon2{
+    border-right: 1px solid rgb(145, 138, 138);
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 22px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2%;
+    color: rgb(100, 100, 100);
+}
+.password{
+    outline: none;
+    height: 9vh;
+    font-Size: 130%;
+    margin-left: 2%;
+    border: none;
+    border-Radius:30px ;
+    flex-grow: 2;
+    background: transparent;
+}
+.buttonParent{
+    width: 36%;
+    border-Radius:30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+.button{
+    width: 100%;
+    height: 10vh;
+    font-Size: 130%;
+    border-Radius:30px ;
+    color: white;
+    background-color: rgb(168, 121, 227);
+    cursor: pointer;
+}
+.container2{
+ margin: auto;
+ margin-top: 2%;
+ display: flex;
+ width: 18%;
+ font-Size: 120%;
+ flex-Direction: row;
+ justify-Content: space-between; 
+ color: rgba(0, 0, 0, 0.842);
+}
+.welcome{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.658);
+}
+.sign-in{
+    color: rgba(0, 0, 0, 0.74);
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    font-Size:17px ;
+    font-weight: 600;
+}
+.forgot{
+    cursor: pointer;
+}
+.regis{
+    color: rgb(168, 121, 227);
+    cursor: pointer;
+}
+@media screen and (max-width:700px) {
+    .welcome{
+        font-size: 25px;
+        margin-top: 27%;
+    }
+    .sign-in{
+        width: 80%;
+        font-size: 17px;
+        margin-top: 17%;
+    }
+    .container{
+        height: 30vh;
+        margin-top: 10%;
+    }
+    .inputBody{
+        width: 80%;
+        padding-left: 5%;
+    }
+    .regIcon{
+        font-size: 20px;
+    }
+    .username{
+        height: 7vh;
+        font-size: 100%;
+    }
+    .inputBody2{
+        width: 80%;
+        padding-left: 5%;
+    }
+    .regIcon2{
+        font-size: 20px;
+    }
+    .password{
+        height: 7vh;
+        font-size: 100%;
+    }
+    .buttonParent{
+        width: 80%;
+    }
+    .button{
+        height: 7vh;
+        font-size: 100%;
+    }
+    .container2{
+        font-size: 100%;
+        width: 55%;
+        margin-top: 10%;
+    }
+}
+@media screen and (min-width:701px) and (max-width:1000px) and (min-height:1001px) and (max-height:1400px)
+ {
+    .welcome{
+        font-size: 25px;
+        margin-top: 27%;
+    }
+    .sign-in{
+        width: 80%;
+        font-size: 17px;
+        margin-top: 10%;
+    }
+    .container{
+        height: 30vh;
+        margin-top: 10%;
+    }
+    .inputBody{
+        width: 80%;
+        padding-left: 5%;
+    }
+    .regIcon{
+        font-size: 20px;
+    }
+    .username{
+        height: 7vh;
+        font-size: 100%;
+    }
+    .inputBody2{
+        width: 80%;
+        padding-left: 5%;
+    }
+    .regIcon2{
+        font-size: 20px;
+    }
+    .password{
+        height: 7vh;
+        font-size: 100%;
+    }
+    .buttonParent{
+        width: 80%;
+    }
+    .button{
+        height: 7vh;
+        font-size: 100%;
+    }
+    .container2{
+        font-size: 100%;
+        width: 40%;
+        margin-top: 10%;
+    }
+ }
+ @media screen and (width:540px) and (height:720px) {
+     .welcome{
+         margin-top: 10%;
+     }
+ }

@@ -1,0 +1,775 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.all {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url(IMG-20210404-WA0006.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.coversAll {
+  width: 50%;
+  height: 65.5vh;
+  background-color: white;
+  margin: auto;
+  overflow: auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.2),
+    2px 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+.containsImage {
+  width: 50%;
+  height: 34vh;
+  margin: auto;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+      to right,
+      rgba(125, 70, 188, 0.164) 60%,
+      rgba(92, 70, 188, 0.3) 40%
+    ),
+    url(iStock_000080733521_Double.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imageText {
+  font-size: 300%;
+  color: whitesmoke;
+  font-weight: lighter;
+  position: absolute;
+  top: 7%;
+  left: 27%;
+  line-height: 100%;
+}
+.imageshowDate {
+  color: whitesmoke;
+  position: absolute;
+  top: 26%;
+  left: 27.5%;
+}
+.imageshowTime {
+  color: whitesmoke;
+  font-size: 230%;
+  position: absolute;
+  top: 12%;
+  left: 58%;
+}
+.addNew {
+  box-sizing: border-box;
+  background-color: rgb(168, 120, 229);
+  color: white;
+  width: 65px;
+  height: 65px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 350%;
+  position: fixed;
+  bottom: 4%;
+  left: 65%;
+  cursor: pointer;
+}
+.text {
+  line-height: 90%;
+  color: rgb(230, 250, 255);
+  font-weight: lighter;
+}
+.theInbox {
+  margin-left: 5%;
+  font-weight: 600;
+  color: rgb(185, 188, 195);
+}
+.todoContent {
+  color: black;
+  height: 80%;
+}
+.map {
+  box-sizing: border-box;
+  line-height: 70%;
+  margin-left: 5%;
+  margin-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+.checkAlign {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.headAlign {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 25%;
+  height: fit-content;
+}
+.bodyAlign {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 30%;
+  height: fit-content;
+}
+.iconAlign {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.timeAlign {
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.check {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 1px solid;
+  cursor: pointer;
+}
+.noTodo {
+  font-size: xx-large;
+  margin-top: 15%;
+}
+.timeMap {
+  font-size: large;
+}
+.theHead {
+  font-size: 130%;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.733);
+}
+.theBody {
+  color: rgba(0, 0, 0, 0.932);
+}
+.del {
+  font-size: x-large;
+  color: rgba(255, 0, 0, 0.685);
+  cursor: pointer;
+}
+.edit {
+  font-size: x-large;
+  color: rgba(0, 128, 0, 0.712);
+  cursor: pointer;
+}
+.preview {
+  font-size: x-large;
+  color: rgba(0, 0, 255, 0.726);
+  cursor: pointer;
+}
+#release {
+  display: none;
+}
+#remove {
+  display: none;
+}
+.checked {
+  display: none;
+}
+#nextCheck {
+  margin-top: 1.5%;
+  margin-left: 3%;
+  font-size: x-large;
+  display: block;
+  float: left;
+}
+#them {
+  display: block;
+}
+#dele {
+  display: none;
+}
+.line {
+  background-color: rgba(0, 0, 0, 0.11);
+  height: 0.1px;
+  width: 100%;
+  margin-top: 2%;
+}
+.iconBack {
+  font-size: xx-large;
+  position: absolute;
+  top: 9%;
+  left: 2%;
+}
+.menu {
+  font-size: 200%;
+  margin-left: 3.5%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+@media screen and (max-width: 360px) and (min-width: 321px) {
+  .containsImage {
+    width: 100%;
+  }
+  .coversAll {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+  }
+  .imageText {
+    position: absolute;
+    left: 7%;
+    font-size: 250%;
+  }
+  .imageshowDate {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+  }
+  .imageshowTime {
+    font-size: 180%;
+    position: absolute;
+    left: 65%;
+  }
+  .theBody {
+    font-size: 80%;
+  }
+  .theHead {
+    font-size: 100%;
+  }
+  .del {
+    font-size: 90%;
+  }
+  .edit {
+    font-size: 90%;
+  }
+  .preview {
+    font-size: 90%;
+  }
+  .timeMap {
+    font-size: 90%;
+  }
+  .addNew {
+    position: fixed;
+    bottom: 5%;
+    left: 75%;
+    width: 60px;
+    height: 60px;
+  }
+  .check {
+    height: 30px;
+    width: 30px;
+  }
+  .menu {
+    margin-left: 6%;
+    margin-top: 1.5%;
+  }
+}
+@media screen and (max-width: 411px) and (min-width: 376px) {
+  .containsImage {
+    width: 100%;
+  }
+  .coversAll {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+  }
+  .imageText {
+    position: absolute;
+    left: 7%;
+    font-size: 250%;
+  }
+  .imageshowDate {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+  }
+  .imageshowTime {
+    font-size: 180%;
+    position: absolute;
+    left: 65%;
+  }
+  .theBody {
+    font-size: 80%;
+  }
+  .theHead {
+    font-size: 100%;
+  }
+  .del {
+    font-size: 90%;
+  }
+  .edit {
+    font-size: 90%;
+  }
+  .preview {
+    font-size: 90%;
+  }
+  .timeMap {
+    font-size: 90%;
+  }
+  .addNew {
+    position: fixed;
+    bottom: 5%;
+    left: 75%;
+    width: 60px;
+    height: 60px;
+  }
+  .check {
+    height: 30px;
+    width: 30px;
+  }
+  .menu {
+    margin-left: 6%;
+    margin-top: 1.5%;
+  }
+}
+@media screen and (max-width: 320px) and (min-width: 281px) {
+  .containsImage {
+    width: 100%;
+  }
+  .coversAll {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+  }
+  .imageText {
+    position: absolute;
+    left: 7%;
+    font-size: 250%;
+  }
+  .imageshowDate {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+  }
+  .imageshowTime {
+    font-size: 180%;
+    position: absolute;
+    left: 65%;
+  }
+  .theBody {
+    font-size: 90%;
+  }
+  .theHead {
+    font-size: 130%;
+  }
+  .del {
+    font-size: 120%;
+    margin-top: -19%;
+  }
+  .edit {
+    font-size: 120%;
+    margin-top: -19%;
+  }
+  .preview {
+    font-size: 120%;
+    margin-top: -19%;
+  }
+  .timeMap {
+    font-size: 100%;
+    margin-top: -18%;
+  }
+  .addNew {
+    position: fixed;
+    bottom: 5%;
+    left: 75%;
+    width: 60px;
+    height: 60px;
+  }
+  .check {
+    height: 40px;
+    width: 40px;
+    margin-left: -2%;
+    margin-top: 0.5%;
+  }
+  .menu {
+    margin-left: 6%;
+    margin-top: 1.5%;
+  }
+}
+@media screen and (max-width: 375px) and (min-width: 361px) {
+  .containsImage {
+    width: 100%;
+  }
+  .coversAll {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+  }
+  .imageText {
+    position: absolute;
+    left: 7%;
+    font-size: 250%;
+  }
+  .imageshowDate {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+  }
+  .imageshowTime {
+    font-size: 180%;
+    position: absolute;
+    left: 65%;
+  }
+  .theBody {
+    font-size: 80%;
+  }
+  .theHead {
+    font-size: 100%;
+  }
+  .del {
+    font-size: 90%;
+  }
+  .edit {
+    font-size: 90%;
+  }
+  .preview {
+    font-size: 90%;
+  }
+  .timeMap {
+    font-size: 90%;
+  }
+  .addNew {
+    position: fixed;
+    bottom: 5%;
+    left: 75%;
+    width: 60px;
+    height: 60px;
+  }
+  .check {
+    height: 30px;
+    width: 30px;
+  }
+  .menu {
+    margin-left: 6%;
+    margin-top: 1.5%;
+  }
+}
+@media screen and (max-width: 414px) and (min-width: 412px) {
+  .containsImage {
+    width: 100%;
+  }
+  .coversAll {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+  }
+  .imageText {
+    position: absolute;
+    left: 7%;
+    font-size: 250%;
+  }
+  .imageshowDate {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+  }
+  .imageshowTime {
+    font-size: 180%;
+    position: absolute;
+    left: 65%;
+  }
+  .theBody {
+    font-size: 80%;
+  }
+  .theHead {
+    font-size: 100%;
+  }
+  .del {
+    font-size: 90%;
+  }
+  .edit {
+    font-size: 90%;
+  }
+  .preview {
+    font-size: 90%;
+  }
+  .timeMap {
+    font-size: 90%;
+  }
+  .addNew {
+    position: fixed;
+    bottom: 5%;
+    left: 75%;
+    width: 60px;
+    height: 60px;
+  }
+  .check {
+    height: 30px;
+    width: 30px;
+    
+  }
+  .menu {
+    margin-left: 6%;
+    margin-top: 1.5%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 521px) {
+  .containsImage {
+    width: 100%;
+  }
+  .coversAll {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+  }
+  .imageText {
+    position: absolute;
+    left: 7%;
+    font-size: 350%;
+  }
+  .imageshowDate {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    font-size: 140%;
+  }
+  .imageshowTime {
+    font-size: 220%;
+    position: absolute;
+    left: 65%;
+  }
+  .theInbox {
+    font-size: 150%;
+  }
+  .theBody {
+    font-size: 100%;
+  }
+  .theHead {
+    font-size: 130%;
+  }
+  .del {
+    font-size: 110%;
+  }
+  .edit {
+    font-size: 110%;
+  }
+  .preview {
+    font-size: 110%;
+  }
+  .timeMap {
+    font-size: 110%;
+  }
+  .addNew {
+    position: fixed;
+    bottom: 5%;
+    left: 75%;
+    width: 85px;
+    height: 85px;
+    font-size: 500%;
+  }
+  .check {
+    height: 40px;
+    width: 40px;
+  }
+  .menu {
+    font-size: 250%;
+    margin-left: 6.5%;
+    margin-top: 1.5%;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+  .containsImage {
+    width: 100%;
+  }
+  .coversAll {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+  }
+  .imageText {
+    position: absolute;
+    left: 7%;
+    font-size: 400%;
+  }
+  .imageshowDate {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    font-size: 180%;
+  }
+  .imageshowTime {
+    font-size: 300%;
+    position: absolute;
+    left: 65%;
+  }
+  .theInbox {
+    font-size: 120%;
+  }
+  .theBody {
+    font-size: 100%;
+  }
+  .theHead {
+    font-size: 110%;
+  }
+  .del {
+    font-size: 110%;
+  }
+  .edit {
+    font-size: 110%;
+  }
+  .preview {
+    font-size: 110%;
+  }
+  .timeMap {
+    font-size: 110%;
+  }
+  .addNew {
+    position: fixed;
+    bottom: 5%;
+    left: 75%;
+    width: 100px;
+    height: 100px;
+    font-size: 600%;
+  }
+  .check {
+    height: 40px;
+    width: 40px;
+  }
+  .menu {
+    font-size: 290%;
+    margin-left: 6.5%;
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 540px) and (min-width: 415px) {
+  .containsImage {
+    width: 100%;
+  }
+  .coversAll {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+  }
+  .imageText {
+    position: absolute;
+    left: 7%;
+    font-size: 300%;
+  }
+  .imageshowDate {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    font-size: 130%;
+  }
+  .imageshowTime {
+    font-size: 220%;
+    position: absolute;
+    left: 65%;
+  }
+  .theBody {
+    font-size: 80%;
+  }
+  .theHead {
+    font-size: 100%;
+  }
+  .del {
+    font-size: 90%;
+  }
+  .edit {
+    font-size: 90%;
+  }
+  .preview {
+    font-size: 90%;
+  }
+  .timeMap {
+    font-size: 90%;
+  }
+  .addNew {
+    position: fixed;
+    bottom: 5%;
+    left: 75%;
+    width: 80px;
+    height: 80px;
+    font-size: 480%;
+  }
+  .check {
+    height: 30px;
+    width: 30px;
+  }
+  .theInbox {
+    font-size: 130%;
+  }
+  .menu {
+    font-size: 200%;
+    margin-left: 6.5%;
+    margin-top: 1.5%;
+  }
+}
+@media screen and (max-width: 280px) {
+  .containsImage {
+    width: 100%;
+  }
+  .coversAll {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+  }
+  .imageText {
+    position: absolute;
+    left: 7%;
+    font-size: 230%;
+  }
+  .imageshowDate {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+  }
+  .imageshowTime {
+    font-size: 140%;
+    position: absolute;
+    left: 65%;
+    top: 9%;
+  }
+  .theBody {
+    font-size: 70%;
+  }
+  .theHead {
+    font-size: 90%;
+  }
+  .del {
+    font-size: 80%;
+  }
+  .edit {
+    font-size: 80%;
+  }
+  .preview {
+    font-size: 80%;
+  }
+  .timeMap {
+    font-size: 80%;
+  }
+  .addNew {
+    position: fixed;
+    bottom: 5%;
+    left: 75%;
+    width: 60px;
+    height: 60px;
+  }
+  .check {
+    height: 30px;
+    width: 30px;
+  }
+  .menu {
+    font-size: 170%;
+    margin-left: 6.5%;
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width:1001px) and (max-width:1100px) {
+  .imageshowTime{
+    font-size: 30px;
+  }
+}
