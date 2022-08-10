@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import editTodo from './editTodo'
 import '../cssFilesandImages/inbox.css'
-import {FaEdit} from 'react-icons/fa'
+import {FaEdit, FaRegMinusSquare} from 'react-icons/fa'
 import {MdDeleteForever} from 'react-icons/md'
 import {VscPreview} from 'react-icons/vsc'
-import { FaCheck } from 'react-icons/fa'
+import { FaCheck,FaTimes } from 'react-icons/fa'
 import {FiMenu} from 'react-icons/fi'
 
  class Inbox extends Component{
@@ -12,6 +12,9 @@ import {FiMenu} from 'react-icons/fi'
     super(props)
     
     this.state={
+        border:'0px',
+        Icon:FiMenu,
+        max:'0px',
         getIndex:'',
         edit:'none',
         color:'',
@@ -32,9 +35,28 @@ import {FiMenu} from 'react-icons/fi'
     this.changeTodoTime=this.changeTodoTime.bind(this)
     this.changeTodoDate=this.changeTodoDate.bind(this)
     this.goMenu=this.goMenu.bind(this)
+    this.logOut=this.logOut.bind(this)
+    }
+    logOut(){
+        this.props.history.push({
+            pathname:'/'
+        })
     }
     goMenu(){
-        
+        if(this.state.Icon===FiMenu){
+        this.setState({
+            max:'50px',
+            Icon:FaTimes,
+            border:'1px solid black'
+        })
+    }
+    if(this.state.Icon===FaTimes){
+        this.setState({
+            max:'0px',
+            Icon:FiMenu,
+            border:'0px'
+        })
+    }
     }
     changeTodoTopic(event){
         this.setState({
@@ -170,7 +192,9 @@ import {FiMenu} from 'react-icons/fi'
             <>  
             <div className='all'>
              <div className='containsImage'>
-                 <FiMenu className='menu' onClick={this.goMenu}></FiMenu>
+                <div className='menuDiv'>
+                 <this.state.Icon className='menu' onClick={this.goMenu} />
+                 <div className='logOut' style={{maxWidth:this.state.max,borderRight:this.state.border}} onClick={this.logOut}>Log Out</div></div>
                  <div className='imageText'>Your<br/> Todos </div>
                  <div className='imageshowDate'>{this.state.showingDate}</div>
                  <div className='imageshowTime'>{this.state.showingTime}</div>

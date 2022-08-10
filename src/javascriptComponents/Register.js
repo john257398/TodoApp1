@@ -14,12 +14,17 @@ class Register extends Component{
      pedri:'gavi'
 }
    this.AddTodo=this.AddTodo.bind(this)
+   this.changeEmail=this.changeEmail.bind(this)
    this.handleChangePassword=this.handleChangePassword.bind(this)
    this.handleChangeUser=this.handleChangeUser.bind(this)
    this.handleConfirmPassword=this.handleConfirmPassword.bind(this)
    this.signAccount=this.signAccount.bind(this)
  }  
  
+  changeEmail(event){
+    this.setState({email:event.target.value})
+  }
+
  handleChangeUser(event){
    this.setState({userValue:event.target.value})
  }
@@ -76,7 +81,7 @@ class Register extends Component{
              <div className='start'> <p>GET STARTED</p></div>
              <div className='fill'> <p>Please fill in all the details to register for a new todo.</p> </div>
               <div className='container-register'>
-             <div className='inputBody3'><div className='regIcon3'> <FaAt /></div><input autoFocus type='text' placeholder='Email Address' value={this.state.email} className='email'/></div>
+             <div className='inputBody3'><div className='regIcon3'> <FaAt /></div><input autoFocus type='text' placeholder='Email Address' value={this.state.email} onChange={this.changeEmail} className='email'/></div>
               <div className='inputBody4'><div className='regIcon4'><FaRegUser /></div><input type='text' value={this.state.userValue} onChange={this.handleChangeUser} placeholder='Username' className='username2' /></div>
               <div className='inputBody5'><div className='regIcon5'><FaLock /></div><input type='password' value={this.state.passwordValue} onChange={this.handleChangePassword} placeholder='Password' className='password2' /></div>
               <div className='inputBody6'><div className='regIcon6'><FaLock /></div><input type='password' value={this.state.confirmPassword} onChange={this.handleConfirmPassword} placeholder='Confirm Password' className='confirm' /></div>
