@@ -78,6 +78,10 @@ body {
   bottom: 4%;
   left: 65%;
   cursor: pointer;
+  transition-duration: 0.5s;
+}
+.addNew:hover {
+  background-color: rgb(169, 141, 204);
 }
 .text {
   line-height: 90%;
@@ -108,16 +112,17 @@ body {
   margin-top: auto;
   margin-bottom: auto;
 }
+.headDiv {
+  width: 35%;
+}
 .headAlign {
   margin-top: auto;
   margin-bottom: auto;
-  width: 25%;
   height: fit-content;
 }
 .bodyAlign {
   margin-top: auto;
   margin-bottom: auto;
-  width: 30%;
   height: fit-content;
 }
 .iconAlign {
@@ -127,6 +132,8 @@ body {
   height: fit-content;
   margin-top: auto;
   margin-bottom: auto;
+  gap: 0.5rem;
+  margin-left: 7%;
 }
 .timeAlign {
   height: fit-content;
@@ -156,19 +163,28 @@ body {
   color: rgba(0, 0, 0, 0.932);
 }
 .del {
-  font-size: x-large;
+  font-size: 25px;
   color: rgba(255, 0, 0, 0.685);
   cursor: pointer;
 }
 .edit {
-  font-size: x-large;
+  font-size: 25px;
   color: rgba(0, 128, 0, 0.712);
   cursor: pointer;
 }
 .preview {
-  font-size: x-large;
+  font-size: 25px;
   color: rgba(0, 0, 255, 0.726);
   cursor: pointer;
+}
+.del:hover {
+  transform: translateY(2px);
+}
+.edit:hover {
+  transform: translateY(2px);
+}
+.preview:hover {
+  transform: translateY(2px);
 }
 #release {
   display: none;
@@ -204,7 +220,7 @@ body {
   top: 9%;
   left: 2%;
 }
-.menuDiv{
+.menuDiv {
   display: flex;
   margin-left: 3.5%;
   width: fit-content;
@@ -217,9 +233,9 @@ body {
   cursor: pointer;
   margin-top: 10%;
 }
-.logOut{
+.logOut {
   background-color: white;
-  width: fit-content; 
+  width: fit-content;
   margin-top: 10%;
   font-size: 80%;
   height: 4vh;
@@ -231,7 +247,7 @@ body {
   cursor: pointer;
   text-align: center;
 }
-@media screen and (max-width: 360px) and (min-width: 321px) {
+@media screen and (max-width: 700px) and (min-width: 260px) {
   .containsImage {
     width: 100%;
   }
@@ -256,143 +272,29 @@ body {
     position: absolute;
     left: 65%;
   }
+  .headDiv {
+    width: 45%;
+  }
   .theBody {
-    font-size: 80%;
+    font-size: 100%;
   }
   .theHead {
     font-size: 100%;
   }
-  .del {
-    font-size: 90%;
-  }
-  .edit {
-    font-size: 90%;
-  }
-  .preview {
-    font-size: 90%;
-  }
-  .timeMap {
-    font-size: 90%;
-  }
-  .addNew {
-    position: fixed;
-    bottom: 5%;
-    left: 75%;
-    width: 60px;
-    height: 60px;
-  }
-  .check {
-    height: 30px;
-    width: 30px;
-  }
-  .menuDiv {
-    margin-left: 6%;
-  }
-}
-@media screen and (max-width: 411px) and (min-width: 376px) {
-  .containsImage {
-    width: 100%;
-  }
-  .coversAll {
-    width: 100%;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    box-shadow: none;
-  }
-  .imageText {
-    position: absolute;
-    left: 7%;
-    font-size: 250%;
-  }
-  .imageshowDate {
-    position: absolute;
-    left: 7%;
-    top: 25%;
-  }
-  .imageshowTime {
-    font-size: 180%;
-    position: absolute;
-    left: 65%;
-  }
-  .theBody {
-    font-size: 80%;
-  }
-  .theHead {
-    font-size: 100%;
+  .iconAlign {
+    gap: 0.3rem;
   }
   .del {
-    font-size: 90%;
+    font-size: 110%;
   }
   .edit {
-    font-size: 90%;
+    font-size: 110%;
   }
   .preview {
-    font-size: 90%;
-  }
-  .timeMap {
-    font-size: 90%;
-  }
-  .addNew {
-    position: fixed;
-    bottom: 5%;
-    left: 75%;
-    width: 60px;
-    height: 60px;
-  }
-  .check {
-    height: 30px;
-    width: 30px;
-  }
-  .menuDiv {
-    margin-left: 6%;
-  }
-}
-@media screen and (max-width: 320px) and (min-width: 281px) {
-  .containsImage {
-    width: 100%;
-  }
-  .coversAll {
-    width: 100%;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    box-shadow: none;
-  }
-  .imageText {
-    position: absolute;
-    left: 7%;
-    font-size: 250%;
-  }
-  .imageshowDate {
-    position: absolute;
-    left: 7%;
-    top: 25%;
-  }
-  .imageshowTime {
-    font-size: 180%;
-    position: absolute;
-    left: 65%;
-  }
-  .theBody {
-    font-size: 90%;
-  }
-  .theHead {
-    font-size: 130%;
-  }
-  .del {
-    font-size: 120%;
-    margin-top: -19%;
-  }
-  .edit {
-    font-size: 120%;
-    margin-top: -19%;
-  }
-  .preview {
-    font-size: 120%;
-    margin-top: -19%;
+    font-size: 110%;
   }
   .timeMap {
     font-size: 100%;
-    margin-top: -18%;
   }
   .addNew {
     position: fixed;
@@ -404,101 +306,20 @@ body {
   .check {
     height: 40px;
     width: 40px;
-    margin-left: -2%;
-    margin-top: 0.5%;
   }
   .menuDiv {
     margin-left: 6%;
   }
 }
-@media screen and (max-width: 375px) and (min-width: 361px) {
-  .containsImage {
-    width: 100%;
-  }
-  .coversAll {
-    width: 100%;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    box-shadow: none;
-  }
-  .imageText {
-    position: absolute;
-    left: 7%;
-    font-size: 250%;
-  }
-  .imageshowDate {
-    position: absolute;
-    left: 7%;
-    top: 25%;
-  }
-  .imageshowTime {
-    font-size: 180%;
-    position: absolute;
-    left: 65%;
-  }
+@media screen and (max-width: 300px) {
   .theBody {
     font-size: 80%;
   }
   .theHead {
-    font-size: 100%;
-  }
-  .del {
-    font-size: 90%;
-  }
-  .edit {
-    font-size: 90%;
-  }
-  .preview {
-    font-size: 90%;
-  }
-  .timeMap {
-    font-size: 90%;
-  }
-  .addNew {
-    position: fixed;
-    bottom: 5%;
-    left: 75%;
-    width: 60px;
-    height: 60px;
-  }
-  .check {
-    height: 30px;
-    width: 30px;
-  }
-  .menuDiv {
-    margin-left: 6%;
-  }
-}
-@media screen and (max-width: 414px) and (min-width: 412px) {
-  .containsImage {
-    width: 100%;
-  }
-  .coversAll {
-    width: 100%;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    box-shadow: none;
-  }
-  .imageText {
-    position: absolute;
-    left: 7%;
-    font-size: 250%;
-  }
-  .imageshowDate {
-    position: absolute;
-    left: 7%;
-    top: 25%;
-  }
-  .imageshowTime {
-    font-size: 180%;
-    position: absolute;
-    left: 65%;
-  }
-  .theBody {
     font-size: 80%;
   }
-  .theHead {
-    font-size: 100%;
+  .iconAlign {
+    gap: 0.1rem;
   }
   .del {
     font-size: 90%;
@@ -510,91 +331,10 @@ body {
     font-size: 90%;
   }
   .timeMap {
-    font-size: 90%;
-  }
-  .addNew {
-    position: fixed;
-    bottom: 5%;
-    left: 75%;
-    width: 60px;
-    height: 60px;
-  }
-  .check {
-    height: 30px;
-    width: 30px;
-    
-  }
-  .menuDiv {
-    margin-left: 6%;
+    font-size: 80%;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 521px) {
-  .containsImage {
-    width: 100%;
-  }
-  .coversAll {
-    width: 100%;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    box-shadow: none;
-  }
-  .imageText {
-    position: absolute;
-    left: 7%;
-    font-size: 350%;
-  }
-  .imageshowDate {
-    position: absolute;
-    left: 7%;
-    top: 25%;
-    font-size: 140%;
-  }
-  .imageshowTime {
-    font-size: 220%;
-    position: absolute;
-    left: 65%;
-  }
-  .theInbox {
-    font-size: 150%;
-  }
-  .theBody {
-    font-size: 100%;
-  }
-  .theHead {
-    font-size: 130%;
-  }
-  .del {
-    font-size: 110%;
-  }
-  .edit {
-    font-size: 110%;
-  }
-  .preview {
-    font-size: 110%;
-  }
-  .timeMap {
-    font-size: 110%;
-  }
-  .addNew {
-    position: fixed;
-    bottom: 5%;
-    left: 75%;
-    width: 85px;
-    height: 85px;
-    font-size: 500%;
-  }
-  .check {
-    height: 40px;
-    width: 40px;
-  }
-  .menu {
-    font-size: 250%;
-  }
-  .menuDiv{
-    margin-left: 6.5%;
-  }
-}
-@media screen and (max-width: 1000px) and (min-width: 769px) {
+@media screen and (max-width: 1000px) and (min-width: 701px) {
   .containsImage {
     width: 100%;
   }
@@ -624,22 +364,22 @@ body {
     font-size: 120%;
   }
   .theBody {
-    font-size: 100%;
+    font-size: 110%;
   }
   .theHead {
-    font-size: 110%;
+    font-size: 120%;
   }
   .del {
-    font-size: 110%;
+    font-size: 120%;
   }
   .edit {
-    font-size: 110%;
+    font-size: 120%;
   }
   .preview {
-    font-size: 110%;
+    font-size: 120%;
   }
   .timeMap {
-    font-size: 110%;
+    font-size: 120%;
   }
   .addNew {
     position: fixed;
@@ -650,146 +390,18 @@ body {
     font-size: 600%;
   }
   .check {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
   }
   .menu {
     font-size: 290%;
   }
-  .menuDiv{
+  .menuDiv {
     margin-left: 6.5%;
   }
 }
-@media screen and (max-width: 540px) and (min-width: 415px) {
-  .containsImage {
-    width: 100%;
-  }
-  .coversAll {
-    width: 100%;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    box-shadow: none;
-  }
-  .imageText {
-    position: absolute;
-    left: 7%;
-    font-size: 300%;
-  }
-  .imageshowDate {
-    position: absolute;
-    left: 7%;
-    top: 25%;
-    font-size: 130%;
-  }
+@media screen and (min-width: 1001px) and (max-width: 1100px) {
   .imageshowTime {
-    font-size: 220%;
-    position: absolute;
-    left: 65%;
-  }
-  .theBody {
-    font-size: 80%;
-  }
-  .theHead {
-    font-size: 100%;
-  }
-  .del {
-    font-size: 90%;
-  }
-  .edit {
-    font-size: 90%;
-  }
-  .preview {
-    font-size: 90%;
-  }
-  .timeMap {
-    font-size: 90%;
-  }
-  .addNew {
-    position: fixed;
-    bottom: 5%;
-    left: 75%;
-    width: 80px;
-    height: 80px;
-    font-size: 480%;
-  }
-  .check {
-    height: 30px;
-    width: 30px;
-  }
-  .theInbox {
-    font-size: 130%;
-  }
-  .menu {
-    font-size: 200%;
-  }
-  .menuDiv{
-    margin-left: 6.5%;
-  }
-}
-@media screen and (max-width: 280px) {
-  .containsImage {
-    width: 100%;
-  }
-  .coversAll {
-    width: 100%;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    box-shadow: none;
-  }
-  .imageText {
-    position: absolute;
-    left: 7%;
-    font-size: 230%;
-  }
-  .imageshowDate {
-    position: absolute;
-    left: 7%;
-    top: 25%;
-  }
-  .imageshowTime {
-    font-size: 140%;
-    position: absolute;
-    left: 65%;
-    top: 9%;
-  }
-  .theBody {
-    font-size: 70%;
-  }
-  .theHead {
-    font-size: 90%;
-  }
-  .del {
-    font-size: 80%;
-  }
-  .edit {
-    font-size: 80%;
-  }
-  .preview {
-    font-size: 80%;
-  }
-  .timeMap {
-    font-size: 80%;
-  }
-  .addNew {
-    position: fixed;
-    bottom: 5%;
-    left: 75%;
-    width: 60px;
-    height: 60px;
-  }
-  .check {
-    height: 30px;
-    width: 30px;
-  }
-  .menu {
-    font-size: 170%;
-  }
-  .menuDiv{
-    margin-left: 6.5%;
-  }
-}
-@media screen and (min-width:1001px) and (max-width:1100px) {
-  .imageshowTime{
     font-size: 30px;
   }
 }

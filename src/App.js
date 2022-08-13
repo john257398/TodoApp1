@@ -1,13 +1,10 @@
-import Inbox from './javascriptComponents/Inbox'
-import Preview from './javascriptComponents/Preview'
-import Register from './javascriptComponents/Register'
-import Login from './javascriptComponents/Login'
+import React from 'react'
 import Navigator from './javascriptComponents/Route'
 
 function App() {
   return (
     <div className="App">
-    <Navigator />
+      <Navigator />
     </div>
   );
 }
